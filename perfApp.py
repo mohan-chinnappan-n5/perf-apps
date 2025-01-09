@@ -97,11 +97,13 @@ class NetworkLatencyTester:
 
 # Streamlit App
 def main():
-    st.title("Network Latency Tester (in ms)")
+    st.title("Network Latency Tester")
     st.sidebar.header("Test Configuration")
 
+    st.sidebar.markdown("Reading will show the network latency of the call from streamlit server. In order to get your own network latency, you need to run this on your local machine.")
+
     # Sidebar inputs
-    url = st.sidebar.text_input("URL to Test", value="https://api.example.com/endpoint")
+    url = st.sidebar.text_input("URL to Test", value="https://google.com")
     num_requests = st.sidebar.number_input("Number of Requests", min_value=1, value=5, step=1)
     delay = st.sidebar.number_input("Delay Between Requests (seconds)", min_value=0.1, value=1.0, step=0.1)
 
