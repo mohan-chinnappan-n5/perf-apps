@@ -100,8 +100,8 @@ def main():
     st.title("Network Latency Tester")
     st.sidebar.header("Test Configuration")
 
-    st.sidebar.markdown("Reading will show the network latency of the call from streamlit server. In order to get your own network latency, you need to run this on your local machine.")
-
+    st.sidebar.markdown("Reading will show the network latency of the call from streamlit server. In order to get your own network latency, you need to run this on your local machine. [code](https://github.com/mohan-chinnappan-n5/perf-apps/blob/main/perfApp.py)")
+   
     # Sidebar inputs
     url = st.sidebar.text_input("URL to Test", value="https://google.com")
     num_requests = st.sidebar.number_input("Number of Requests", min_value=1, value=5, step=1)
